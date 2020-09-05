@@ -21,12 +21,7 @@ namespace FancyZonesEditor.Converters
 
         public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {
-            if (value is int)
-            {
-                return (int)value == 1;
-            }
-
-            return false;
+            return value is int && (int)value == 1;
         }
     }
 }

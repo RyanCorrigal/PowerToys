@@ -38,9 +38,7 @@ namespace Microsoft.Plugin.WindowWalker.Components
                 for (int secondIndex = 0; secondIndex < searchText.Length; secondIndex++)
                 {
                     matches[firstIndex, secondIndex] =
-                        searchText[secondIndex] == text[firstIndex] ?
-                        true :
-                        false;
+                        searchText[secondIndex] == text[firstIndex];
                 }
             }
 

@@ -29,7 +29,7 @@ namespace Microsoft.Plugin.Indexer.DriveDetection
         {
             string registryLocation = @"Software\Microsoft\Windows Search\Gather\Windows\SystemIndex";
             string valueName = "EnableFindMyFiles";
-            IsEnhancedModeEnabled = _registryHelper.GetHKLMRegistryValue(registryLocation, valueName) == 0 ? false : true;
+            IsEnhancedModeEnabled = _registryHelper.GetHKLMRegistryValue(registryLocation, valueName) != 0;
         }
     }
 }

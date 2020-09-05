@@ -101,7 +101,7 @@ namespace ColorPicker.Helpers
             }
             else
             {
-                var enlarge = (_currentZoomLevel - _previousZoomLevel) > 0 ? true : false;
+                var enlarge = (_currentZoomLevel - _previousZoomLevel) > 0;
                 var currentZoomFactor = enlarge ? ZoomFactor : 1.0 / ZoomFactor;
 
                 _zoomViewModel.ZoomFactor *= currentZoomFactor;
